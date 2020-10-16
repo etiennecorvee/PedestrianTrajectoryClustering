@@ -4,6 +4,9 @@ from os import path
 
 import pandas
 
+import sys
+sys.path.append("..")
+
 from ptcio.positionsio import gorrini_read, zhang_read
 from ptcpy.evaluation.performance_measures import get_performance_measures, rand_score_measure
 from ptcpy.ptcio.visualization import draw_trajectories, heat_map
